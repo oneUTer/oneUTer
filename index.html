@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>魏博文的个人主页</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-image: url('background.png');
+                background-size: cover;
+                background-position: center;
+                margin: 0;
+                padding: 0;
+                color: #333;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+
+            header {
+                background-color: rgba(76, 175, 80, 0.9);
+                color: white;
+                padding: 12px 8px;
+                text-align: center;
+                border-bottom: 2px solid #333;
+                width: 100%;
+                
+                
+                
+                
+            }
+
+            main {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                
+                padding: 20px;
+                box-sizing: border-box;
+                flex-grow: 1;
+            }
+
+            .left-side {
+                width: 60%;
+                padding-right: 20px;
+            }
+
+            .right-side {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .section {
+                margin-bottom: 30px;
+            }
+
+            .profile-container {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 20px;
+            }
+
+            .profile-img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 5px solid #4CAF50;
+                margin-right: 20px;
+                object-fit: cover;
+            }
+
+            .school-logo {
+                width: 150px;
+                height: 150px;
+                background-image: url('HFUT.jpeg');
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px;
+            }
+
+            .photo-wall {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: flex-start;
+            }
+
+            .photo-wall img {
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                border-radius: 10px;
+                border: 2px solid #4CAF50;
+            }
+
+            strong {
+                color: #4CAF50;
+                font-weight: bold;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            li {
+                margin: 5px 0;
+            }
+
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: relative;
+                width: 100%;
+            }
+
+            @media (max-width: 768px) {
+                main {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .profile-img {
+                    width: 120px;
+                    height: 120px;
+                }
+
+                .school-logo {
+                    width: 120px;
+                    height: 120px;
+                }
+
+                .photo-wall img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>魏博文的个人主页</h1>
+        </header>
+
+        <main>
+            <div class="left-side">
+                <div class="section">
+                    <div class="profile-container">
+                        <img src="WeiBowen.jpg" alt="魏博文的头像" class="profile-img">
+                        <div class="school-logo" aria-hidden="true"></div>
+                    </div>
+                    <h2><strong>关于我</strong></h2>
+                    <p><strong>姓名：</strong><span id="name"></span></p>
+                    <p><strong>性别：</strong><span id="gender"></span></p>
+                    <p><strong>院校：</strong><span id="studentId"></span></p>
+                    <p><strong>专业：</strong><span id="identity1"></span></p>
+                </div>
+
+                <div class="section">
+                    <h2><strong>特长爱好</strong></h2>
+                    <p id="hobbies"></p>
+                </div>
+
+                <div class="section">
+                    <h2><strong>获得荣誉</strong></h2>
+                    <ul id="honors-list"></ul>
+                </div>
+
+                <div class="section">
+                    <h2><strong>学术经历</strong></h2>
+                    <ul id="academic-experience-list"></ul>
+                </div>
+
+                <div class="section">
+                    <h2><strong>项目经历</strong></h2>
+                    <ul id="project-experience-list"></ul>
+                    <video controls width="600">
+                        <source src="myproject.mp4" type="video/mp4">
+                        您的浏览器不支持 video 标签。
+                    </video>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="section">
+                    <h2>照片墙</h2>
+                    <div class="photo-wall">
+                        <img src="mmexport1730479909654.jpg" alt="照片1">
+                        <img src="IMG_20241230_234058.jpg" alt="照片2">
+                        <img src="IMG_20241105_153604.jpg" alt="照片3">
+                        <img src="mmexport1730479893962.jpg" alt="照片4">
+                        <img src="IMG_20231006_195020.jpg" alt="照片5">
+                        <img src="Screenshot_20231006_191930.jpg" alt="照片6">
+                        <img src="mmexport1730479918071.jpg" alt="照片7">
+                        <img src="mmexport1730479924636.jpg" alt="照片8">
+                        <img src="Screenshot_20241205_100805_com.ss.android.ugc.awe.jpg" alt="照片9">
+                        <img src="Image_1714552537460.jpg" alt="照片10">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>学术研究、技术开发欢迎联系我</p>
+            <p>邮箱：bowen_wei_hfut@163.com</p>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const personalInfo = {
+                    name: "魏博文",
+                    gender: "男",
+                    studentId: "合肥工业大学",
+                    identity1: "计算机科学与技术",
+                    hobbies: "足球⚽、篮球🏀、吉他🎸",
+                    honors: [
+                        "2025年  获得“推荐优秀毕业生免试攻读研究生”资格",
+                        "2025年  获得合肥工业大学“三好学生”荣誉称号      校级   个人",
+                        "2024年  获得合肥工业大学“三好学生”荣誉称号      校级   个人",
+                        "2025年  获得合肥工业大学三等奖学金   (1000)     校级   个人",
+                        "2024年  获得合肥工业大学三等奖学金   (1000元)   校级   个人",
+                        "2023年  获得合肥工业大学三等奖学金   (1000元)   校级   个人",
+                        "2024年  获得合肥工业大学优秀寝室奖学金(200元)   校级   集体",
+                        "2025年  中国大学生工程实践与创新能力大赛           二等奖   省级",
+                        "2024年  大学生创新创业计划（4000元）              合格/中   省级",
+                        "2023年  全国大学生心理情景剧展示                  二等奖    省级",
+                        "2025年  合肥工业大学物联网应用创新大赛             三等奖    校级",
+                        "2023年  合肥工业大学程序设计竞赛                  优秀奖    校级",
+                        "2024年  合肥工业大学机器人足球校赛                 三等奖    校级",
+                        "2023年“外教社杯”高校学生跨境文化能力大赛           三等奖    校级"
+                    ],
+                    academicExperience: [
+                        "主持省级大学生创新创业项目“基于机器视觉的森林防护无人机巡检系统” ",
+                        "“基于机器视觉的森林防护无人机巡检系统”获得软件著作权一项。",
+                        "飞行器创新实验室核心成员，负责嵌入式开发、飞控开发、视觉算法设计；",
+                        "现在感兴趣的研究方向有：计算机处理器CPU设计、机器学习与人工智能（图像和声音处理）。"
+                    ],
+                    projectExperience: [
+                        "包含54条指令的RISC指令集多周期单流水线CPU设计、基于机器视觉的森林防火无人机巡检系统"
+                    ]
+                };
+
+                const setText = (id, value) => {
+                    const el = document.getElementById(id);
+                    if (el) el.textContent = value ?? '';
+                };
+
+                setText('name', personalInfo.name);
+                setText('gender', personalInfo.gender);
+                setText('studentId', personalInfo.studentId);
+                setText('identity1', personalInfo.identity1);
+                setText('hobbies', personalInfo.hobbies);
+
+                const honorsList = document.getElementById('honors-list');
+                if (honorsList) {
+                    personalInfo.honors.filter(Boolean).forEach(function (honor) {
+                        const li = document.createElement('li');
+                        li.textContent = honor;
+                        honorsList.appendChild(li);
+                    });
+                }
+
+                const academicExperienceList = document.getElementById('academic-experience-list');
+                if (academicExperienceList) {
+                    personalInfo.academicExperience.filter(Boolean).forEach(function (experience) {
+                        const li = document.createElement('li');
+                        li.textContent = experience;
+                        academicExperienceList.appendChild(li);
+                    });
+                }
+
+                const projectExperienceList = document.getElementById('project-experience-list');
+                if (projectExperienceList) {
+                    personalInfo.projectExperience.filter(Boolean).forEach(function (project) {
+                        const li = document.createElement('li');
+                        li.textContent = project;
+                        projectExperienceList.appendChild(li);
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>

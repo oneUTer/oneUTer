@@ -9,8 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/oneUTer?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-REPOSITORIES-38BDF8?style=for-the-badge&amp;labelColor=0D1117" alt="Explore my repositories" /></a>
-  <a href="https://github.com/oneUTer"><img src="https://img.shields.io/badge/GITHUB-oneUTer-A78BFA?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;labelColor=0D1117" alt="GitHub: oneUTer" /></a>
+  <a href="https://github.com/oneUTer?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-REPOSITORIES-D8A657?style=for-the-badge&amp;labelColor=202020" alt="Explore my repositories" /></a>
+  <a href="https://github.com/oneUTer"><img src="https://img.shields.io/badge/GITHUB-oneUTer-565656?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;labelColor=202020" alt="GitHub: oneUTer" /></a>
+  <a href="mailto:bowen_wei_hfut@163.com"><img src="https://img.shields.io/badge/CONTACT-EMAIL-71624D?style=for-the-badge&amp;labelColor=202020" alt="Email Bowen Wei" /></a>
 </p>
 
 ## 01 / Hello, I'm Bowen
@@ -109,7 +110,7 @@ and a measured result only if you have evidence. No placeholder project links.
 </picture>
 
 <p align="center">
-  <sub>Generated from my GitHub contribution graph · Dark &amp; light variants</sub>
+  <sub>Automatically refreshed daily · Dark &amp; light variants</sub>
 </p>
 
 ## 06 / Research Background
@@ -135,5 +136,6 @@ I value the habits this work develops: careful experimentation, data quality che
 <p align="center">
   <strong>Let's build something useful.</strong><br />
   <sub>Bowen Wei / oneUTer · Java Backend &amp; AI Agent Development</sub><br /><br />
-  <a href="https://github.com/oneUTer?tab=repositories">Explore my work ↗</a>
+  <a href="https://github.com/oneUTer?tab=repositories">Explore my work ↗</a><br /><br />
+  <a href="mailto:bowen_wei_hfut@163.com">bowen_wei_hfut@163.com</a>
 </p>

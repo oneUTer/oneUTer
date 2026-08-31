@@ -1,44 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" fill="none" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" fill="none" role="img" aria-labelledby="title desc">
   <title id="title">Bowen Wei — Java Backend and AI Agent Developer</title>
   <desc id="desc">Deep forest engineering workspace with larger warm white text, muted sage accents, a subtle animated signal, and clearly separated backend and agent connectors.</desc>
   <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M40 0H0V40" stroke="#FFFFFF" stroke-opacity=".028"/>
     </pattern>
-    <clipPath id="frame"><rect x="1" y="1" width="1198" height="388" rx="22"/></clipPath>
+    <clipPath id="frame"><rect x="1" y="1" width="1198" height="338" rx="22"/></clipPath>
     <style>
       .sans { font-family: 'Segoe UI', Arial, sans-serif; }
       .mono { font-family: Consolas, 'Liberation Mono', monospace; }
       .signal { animation: signal 3s ease-in-out infinite; }
       .flow { stroke-dasharray: 5 9; animation: flow 8s linear infinite; }
-      .cursor { animation: cursor 1.4s steps(1) infinite; }
       @keyframes signal { 0%,100% { opacity:.4; } 50% { opacity:1; } }
       @keyframes flow { to { stroke-dashoffset:-84; } }
-      @keyframes cursor { 0%,55% { opacity:1; } 56%,100% { opacity:0; } }
-      @media (prefers-reduced-motion: reduce) { .signal,.flow,.cursor { animation:none; } }
+      @media (prefers-reduced-motion: reduce) { .signal,.flow { animation:none; } }
     </style>
   </defs>
   <g clip-path="url(#frame)">
-    <rect width="1200" height="390" fill="#13201D"/>
-    <rect width="1200" height="390" fill="url(#grid)"/>
+    <rect width="1200" height="340" fill="#13201D"/>
+    <rect width="1200" height="340" fill="url(#grid)"/>
     <path d="M50 1H1150" stroke="#34493F" stroke-width="2"/>
     <path d="M50 1H180" stroke="#9BBF8B" stroke-width="3"/>
     <g class="mono" font-size="15" letter-spacing="1.5">
       <circle cx="54" cy="49" r="4" fill="#9BBF8B" class="signal"/>
-      <text x="69" y="54" fill="#B1C0B8">ONEUTER / ENGINEERING IN PROGRESS</text>
+      <text x="69" y="54" fill="#B1C0B8">ONEUTER</text>
     </g>
     <text x="49" y="139" class="sans" font-size="74" font-weight="700" letter-spacing="-2" fill="#F0F1E9">Bowen Wei<tspan fill="#9BBF8B">.</tspan></text>
     <text x="53" y="182" class="sans" font-size="29" fill="#E0E6DD">Java Backend &amp; AI Agent Developer</text>
-    <text x="53" y="219" class="sans" font-size="20" fill="#B1C0B8">Backend foundations. Agent possibilities.</text>
-    <rect id="java-tag" x="53" y="245" width="212" height="38" rx="7" fill="#22352A" stroke="#476A50"/>
-    <rect id="agent-tag" x="279" y="245" width="228" height="38" rx="7" fill="#1D2D28" stroke="#3D594C"/>
-    <text x="69" y="270" class="mono" font-size="15" font-weight="700" letter-spacing=".6" fill="#C0D6AB">JAVA / SPRING BOOT</text>
-    <text x="295" y="270" class="mono" font-size="15" font-weight="700" letter-spacing=".6" fill="#D4E0D6">AGENTS / RAG / MCP</text>
-    <rect id="workspace-panel" x="708" y="60" width="442" height="252" rx="15" fill="#0E1916" stroke="#34493F"/>
+    <rect id="java-tag" x="53" y="228" width="212" height="38" rx="7" fill="#22352A" stroke="#476A50"/>
+    <rect id="agent-tag" x="279" y="228" width="228" height="38" rx="7" fill="#1D2D28" stroke="#3D594C"/>
+    <text x="69" y="253" class="mono" font-size="15" font-weight="700" letter-spacing=".6" fill="#C0D6AB">JAVA / SPRING BOOT</text>
+    <text x="295" y="253" class="mono" font-size="15" font-weight="700" letter-spacing=".6" fill="#D4E0D6">AGENTS / RAG / MCP</text>
+    <rect id="workspace-panel" x="708" y="60" width="442" height="220" rx="15" fill="#0E1916" stroke="#34493F"/>
     <path d="M709 99H1149" stroke="#2B4036"/>
     <circle cx="729" cy="80" r="4" fill="#667B6F"/><circle cx="744" cy="80" r="4" fill="#A6B5AB"/><circle cx="759" cy="80" r="4" fill="#9BBF8B"/>
     <text x="784" y="85" class="mono" font-size="14" fill="#B1C0B8">backend-agent.workspace</text>
-    <text x="730" y="126" class="mono" font-size="12" letter-spacing=".9" fill="#B1C0B8">LEARNING TO CONNECT THE PIECES</text>
+    <g id="workspace-diagram" transform="translate(0 -15)">
     <!-- Stop connectors outside their destination boxes; arrowheads are drawn last. -->
     <path d="M842 171H887M991 171H1092V217M842 249H887M991 249H1049" stroke="#4F6A5B" stroke-width="1.5"/>
     <path d="M842 171H887M991 171H1092V217M842 249H887M991 249H1049" class="flow" stroke="#A6CBB5" stroke-opacity=".65" stroke-width="1.5"/>
@@ -60,12 +57,8 @@
       <path id="context-arrow" d="M1086 211L1092 217L1098 211"/>
       <path id="tools-arrow" d="M1043 244L1049 249L1043 254"/>
     </g>
-    <text x="730" y="296" class="mono" font-size="12" fill="#A1B3A7">// build · test · evaluate · iterate</text>
-    <path d="M53 330H1150" stroke="#30483A"/>
-    <text x="53" y="359" class="mono" font-size="17" fill="#9BBF8B">$</text>
-    <text x="72" y="359" class="mono" font-size="17" fill="#B1C0B8">build things that actually work</text>
-    <rect x="395" y="344" width="9" height="18" rx="1" fill="#9BBF8B" class="cursor"/>
-    <text x="1148" y="359" text-anchor="end" class="mono" font-size="14" letter-spacing="1" fill="#B1C0B8">JAVA and AGENTS.</text>
+    </g>
+    <text x="1148" y="317" text-anchor="end" class="mono" font-size="14" letter-spacing="1" fill="#B1C0B8">JAVA and AGENTS.</text>
   </g>
-  <rect x="1" y="1" width="1198" height="388" rx="22" stroke="#34493F"/>
+  <rect x="1" y="1" width="1198" height="338" rx="22" stroke="#34493F"/>
 </svg>

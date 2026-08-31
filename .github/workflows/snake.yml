@@ -1,0 +1,61 @@
+name: Generate contribution snake
+
+on:
+  # UTC 01:23 = Asia/Shanghai 09:23. GitHub may delay scheduled runs.
+  schedule:
+    - cron: "23 1 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/snake.yml"
+      - "README.md"
+
+# Only the generation/publishing job receives repository write permission.
+permissions: {}
+
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    name: Generate and publish SVG animations
+    # Do not run this oneUTer-specific workflow in unrelated forks.
+    if: github.repository == 'oneUTer/oneUTer'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Generate light and dark contribution snakes
+        # Platane/snk svg-only v3 — pinned to a verified commit.
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg?palette=github-light&color_snake=#7c3aed&color_dots=#ebedf0,#bae6fd,#7dd3fc,#38bdf8,#0284c7
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#a78bfa&color_dots=#161b22,#15364a,#166078,#159bb5,#67e8f9
+
+      - name: Check generated files
+        shell: bash
+        run: |
+          test -s dist/github-contribution-grid-snake.svg
+          test -s dist/github-contribution-grid-snake-dark.svg
+
+      - name: Publish animations to the output branch
+        # crazy-max/ghaction-github-pages v4.2.0 — pinned to a verified commit.
+        # Used only for branch publishing; enabling GitHub Pages is not required.
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: true
+          allow_empty_commit: false
+          jekyll: false
+          commit_message: "chore: update contribution snake [skip ci]"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

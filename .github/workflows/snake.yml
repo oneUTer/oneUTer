@@ -10,6 +10,7 @@ on:
       - main
     paths:
       - ".github/workflows/snake.yml"
+      - ".github/scripts/**"
       - "README.md"
 
 # Only the generation/publishing job receives repository write permission.
@@ -30,6 +31,15 @@ jobs:
       contents: write
 
     steps:
+      - name: Check out animation scripts
+        # actions/checkout v4.2.2 — pinned to a verified commit.
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+
+      - name: Test animation timing
+        run: python3 -B -m unittest discover -s .github/scripts -p 'test_*.py'
+
       - name: Generate light and dark contribution snakes
         # Platane/snk svg-only v3 — pinned to a verified commit.
         uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b
@@ -39,6 +49,12 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg?palette=github-light&color_snake=#7c3aed&color_dots=#ebedf0,#bae6fd,#7dd3fc,#38bdf8,#0284c7
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#a78bfa&color_dots=#161b22,#15364a,#166078,#159bb5,#67e8f9
+
+      - name: Shorten the return trip to two seconds
+        run: |
+          python3 -B .github/scripts/retime_snake.py --return-ms 2000 \
+            dist/github-contribution-grid-snake.svg \
+            dist/github-contribution-grid-snake-dark.svg
 
       - name: Check generated files
         shell: bash

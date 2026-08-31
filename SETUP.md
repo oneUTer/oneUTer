@@ -10,6 +10,9 @@ oneUTer/
 ├── assets/
 │   └── header.svg            # 自带的深色动态横幅，必须一起上传
 ├── .github/
+│   ├── scripts/
+│   │   ├── retime_snake.py       # 仅加速吃完后的返程
+│   │   └── test_retime_snake.py  # 动画时间轴测试
 │   └── workflows/
 │       └── snake.yml         # 贡献蛇生成与发布工作流
 └── SETUP.md                  # 本说明，不会直接显示在个人主页
@@ -28,15 +31,16 @@ oneUTer/
 ```powershell
 Set-Location 'D:\oneUTer'
 git status
-git add README.md assets/header.svg .github/workflows/snake.yml SETUP.md
+git add README.md assets/header.svg .github/workflows/snake.yml .github/scripts SETUP.md
 git commit -m "feat: refresh profile with Java backend and AI Agent focus"
 git push origin main
 ```
 
 ## 动画与权限
 
-- 默认每天 **北京时间 09:23** 更新，使用 UTC 定时配置；GitHub 调度可能延迟。修改 README 或工作流并推送到 `main` 也会触发生成。
+- 默认每天 **北京时间 09:23** 更新，使用 UTC 定时配置；GitHub 调度可能延迟。修改 README、工作流或 `.github/scripts/` 中的脚本并推送到 `main` 也会触发生成。
 - 动画在浏览器中循环播放，但贡献数据由工作流定时重新读取、生成，不是每次打开主页都实时查询。日常无需手动操作，也不需要本地电脑保持开机；希望立即纳入新贡献时，可以手动运行一次。
+- 吃格子的速度保持不变，吃完后的返程最多 **2 秒**；本来更短的返程不减速。深浅色动画都会在生成后自动处理，蛇身、格子变色和底部进度条保持同步。无需手动修改 `output` 中的 SVG，也不会被每日更新覆盖。
 - 若刚开启 **Contribution settings → Private contributions**，请手动重新运行工作流，或等待下一次定时运行；勾选可见性选项本身不会触发图片重新生成。
 - 使用 GitHub 自动提供的 `GITHUB_TOKEN`，不需要手动创建 PAT，也不要把个人令牌写进文件。工作流已声明 `contents: write`，用来写入本仓库的 `output` 分支。
 - 若出现 403 / `Permission denied`，检查 **Settings → Actions → General** 中的 Actions 策略、Workflow permissions 以及分支规则是否允许该任务写入 `output`。组织限制可能需要管理员处理。
@@ -53,7 +57,7 @@ git push origin main
 - **Current Focus** 表示当前学习与探索方向。没有编造项目或成果；真实项目公开后，可增加 **Projects**，补充链接、你的贡献和可验证的结果。
 - 若默认分支不是 `main`，请修改 `snake.yml` 的 `push.branches` 和上面的推送命令。定时、手动触发所需的工作流应存在于默认分支。
 - 若更改用户名，需同步修改 README 的链接、工作流中的仓库判断及横幅文字。
-- 两个 Actions 依赖已固定到核对过的提交，升级时需主动更新。生成方式参考 [Platane/snk 官方用法](https://github.com/Platane/snk)，发布参数参考 [发布 Action 源码](https://github.com/crazy-max/ghaction-github-pages/blob/df5cc2bfa78282ded844b354faee141f06b41865/src/main.ts)。
+- Actions 依赖已固定到核对过的提交，升级时需主动更新。生成方式参考 [Platane/snk 官方用法](https://github.com/Platane/snk)，发布参数参考 [发布 Action 源码](https://github.com/crazy-max/ghaction-github-pages/blob/df5cc2bfa78282ded844b354faee141f06b41865/src/main.ts)。返程脚本使用 Python 标准库，并针对当前固定版本的 SVG 格式编写；升级生成器时应重新验证。遇到不兼容格式，工作流会停止发布，保留上一版动画。
 
 ## 验证范围
 

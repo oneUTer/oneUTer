@@ -1,99 +1,53 @@
 <h1 align="center">Hi 👋, I'm Bowen Wei</h1>
 
-<h3 align="center">
-Computer Science Graduate Student · Backend Developer · Deep Learning Researcher
-</h3>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1000&color=3BA8F5&center=true&vCenter=true&width=900&lines=Computer+Science+Graduate+Student;Java+Backend+Developer;Deep+Learning+%26+Time+Series+Researcher;Building+Projects+and+Exploring+Technology" alt="Typing SVG" />
+</p>
 
 <p align="center">
   <a href="https://github.com/oneUTer">
-    <img src="https://komarev.com/ghpvc/?username=oneUTer&label=Profile%20Views&style=flat" alt="Profile Views" />
+    <img src="https://img.shields.io/github/followers/oneUTer?label=Followers&style=for-the-badge" />
   </a>
+  <a href="https://github.com/oneUTer?tab=repositories">
+    <img src="https://img.shields.io/badge/Repositories-View-blue?style=for-the-badge" />
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=oneUTer&label=Profile%20Views&style=for-the-badge" />
 </p>
 
 ---
 
-## 👨‍💻 About Me
+## 🚀 About Me
 
-- 🎓 Graduate student in **Computer Science & Technology**
-- 💻 Interested in **Java Backend Development**
-- 🌱 Currently learning **Spring Boot, MySQL, Redis, Docker and distributed systems**
-- 🔬 Researching **Deep Learning, Time Series and Battery Intelligence**
-- 🔋 Working on **Battery EOL Prediction** and **SOH Estimation**
-- 🐧 Daily user of **Linux, Git and remote development environments**
-- 🚀 Building engineering-oriented projects for backend development
+- 🎓 Computer Science graduate student
+- 💻 Focusing on **Java Backend Development**
+- 🔬 Also working on **Deep Learning / Time Series / Battery Intelligence**
+- 🔋 Research topics include **Battery EOL Prediction** and **SOH Estimation**
+- 🐧 Comfortable with **Linux / Git / Remote Development**
+- 🌱 Currently learning **Spring Boot, MySQL, Redis, Docker, and System Design**
+- 🎯 Goal: build strong engineering projects for backend job applications
 
 ---
 
 ## 🛠 Tech Stack
 
-### Backend
-
+### Backend Development
 <p>
   <img src="https://skillicons.dev/icons?i=java,spring,mysql,redis,maven" />
 </p>
 
-### Development & DevOps
-
-<p>
-  <img src="https://skillicons.dev/icons?i=git,github,docker,linux,vscode" />
-</p>
-
-### AI & Research
-
+### Programming & AI
 <p>
   <img src="https://skillicons.dev/icons?i=python,pytorch" />
 </p>
 
----
-
-## 🚀 Featured Projects
-
-### 💻 Backend Engineering
-
-**Enterprise Backend System**
-
-> A production-oriented backend project based on Java and Spring Boot.
-
-`Java` · `Spring Boot` · `MySQL` · `Redis` · `Docker`
-
-Coming soon...
-
----
-
-### 🔋 Battery EOL Prediction
-
-Deep-learning methods for predicting the End-of-Life of lithium-ion batteries from cycling data.
-
-`Python` · `PyTorch` · `Time Series` · `Deep Learning`
-
----
-
-### ⚡ Battery SOH Estimation
-
-Deep-learning-based State-of-Health estimation for lithium-ion batteries.
-
-`Python` · `PyTorch` · `Battery Health` · `Time Series`
-
----
-
-## 📊 GitHub Statistics
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=oneUTer&show_icons=true&hide_border=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=oneUTer&layout=compact&hide_border=true" />
+### Tools & Environment
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,docker,linux,vscode,idea" />
 </p>
 
 ---
 
-## 📈 Contribution Activity
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=oneUTer&hide_border=true" />
-</p>
-
----
-
-## 🎯 Current Focus
+## 📌 Current Focus
 
 ```text
 Backend Engineering
@@ -109,10 +63,3 @@ Research
 ├── Battery SOH Estimation
 ├── Deep Learning
 └── Time Series Modeling
-```
-
----
-
-<p align="center">
-  <i>Keep learning. Keep building.</i>
-</p>

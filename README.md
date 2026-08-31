@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/oneUTer?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-REPOSITORIES-D8A657?style=for-the-badge&amp;labelColor=202020" alt="Explore my repositories" /></a>
-  <a href="https://github.com/oneUTer"><img src="https://img.shields.io/badge/GITHUB-oneUTer-565656?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;labelColor=202020" alt="GitHub: oneUTer" /></a>
-  <a href="mailto:bowen_wei_hfut@163.com"><img src="https://img.shields.io/badge/CONTACT-EMAIL-71624D?style=for-the-badge&amp;labelColor=202020" alt="Email Bowen Wei" /></a>
+  <a href="https://github.com/oneUTer?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-REPOSITORIES-6D8C64?style=for-the-badge&amp;labelColor=16211D" alt="Explore my repositories" /></a>
+  <a href="https://github.com/oneUTer"><img src="https://img.shields.io/badge/GITHUB-oneUTer-47554D?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;labelColor=16211D" alt="GitHub: oneUTer" /></a>
+  <a href="mailto:bowen_wei_hfut@163.com"><img src="https://img.shields.io/badge/CONTACT-EMAIL-526E60?style=for-the-badge&amp;labelColor=16211D" alt="Email Bowen Wei" /></a>
 </p>
 
 ## 01 / Hello, I'm Bowen
